@@ -1,0 +1,103 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    zshw6.3.o(ZSHW6) refers to random.o(Random$$code) for randomnumber
+    random.o(Random$$code) refers to zshw6.3.o(ZSHW6) for zshw6
+    random.o(Random$$code) refers to random.o(Random$$data) for seed
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    Random$$code                             0x00000000   Section       44  random.o(Random$$code)
+    RANDOM.s                                 0x00000000   Number         0  random.o ABSOLUTE
+    ZSHW6.3.s                                0x00000000   Number         0  zshw6.3.o ABSOLUTE
+    ZSHW6                                    0x0000002c   Section      304  zshw6.3.o(ZSHW6)
+    numbers                                  0x000000f8   Data          44  zshw6.3.o(ZSHW6)
+    ones                                     0x00000124   Data          44  zshw6.3.o(ZSHW6)
+    Random$$data                             0x0000015c   Section        8  random.o(Random$$data)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    randomnumber                             0x00000004   ARM Code       0  random.o(Random$$code)
+    zshw6                                    0x0000002c   ARM Code       0  zshw6.3.o(ZSHW6)
+    seed                                     0x0000015c   Data           0  random.o(Random$$data)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000164, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_RW (Base: 0x00000000, Size: 0x00000164, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x0000002c   Code   RW            6  * Random$$code        random.o
+    0x0000002c   0x00000130   Code   RW            1  * ZSHW6               zshw6.3.o
+    0x0000015c   0x00000008   Data   RW            7    Random$$data        random.o
+
+
+    Execution Region ER_ZI (Base: 0x00000164, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        44          4          0          8          0        176   random.o
+       304         96          0          0          0        268   zshw6.3.o
+
+    ----------------------------------------------------------------------
+       348        100          0          8          0        444   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       348        100          0          8          0        444   Grand Totals
+       348        100          0          8          0        444   ELF Image Totals
+       348        100          0          8          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  348 (   0.34kB)
+    Total RW  Size (RW Data + ZI Data)                 8 (   0.01kB)
+    Total ROM Size (Code + RO Data + RW Data)        356 (   0.35kB)
+
+==============================================================================
+

@@ -1,0 +1,2 @@
+Dependencies for Project 'zstallHW5.2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\zstallHW5.2.s)(0x59E4DC6B)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\zstallhw5.2.lst --xref -o .\zstallhw5.2.o --depend .\zstallhw5.2.d)

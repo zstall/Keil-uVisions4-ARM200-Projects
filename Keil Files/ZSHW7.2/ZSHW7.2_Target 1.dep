@@ -1,0 +1,2 @@
+Dependencies for Project 'ZSHW7.2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\ZSHW7.2.s)(0x59F4D2A0)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\zshw7.2.lst --xref -o .\zshw7.2.o --depend .\zshw7.2.d)

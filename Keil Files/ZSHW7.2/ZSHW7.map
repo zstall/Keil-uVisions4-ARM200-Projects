@@ -1,0 +1,99 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ZSHW72                                   0x00000000   Section      528  zshw7.2.o(ZSHW72)
+    ZSHW7.2.s                                0x00000000   Number         0  zshw7.2.o ABSOLUTE
+    encrypt                                  0x00000040   ARM Code       0  zshw7.2.o(ZSHW72)
+    decrypt                                  0x0000007c   ARM Code       0  zshw7.2.o(ZSHW72)
+    compare                                  0x000000e8   ARM Code       0  zshw7.2.o(ZSHW72)
+    done                                     0x00000118   ARM Code       0  zshw7.2.o(ZSHW72)
+    EOS                                      0x0000011c   Data         128  zshw7.2.o(ZSHW72)
+    TOS                                      0x0000019c   Data           4  zshw7.2.o(ZSHW72)
+    message                                  0x000001a0   Data          12  zshw7.2.o(ZSHW72)
+    scrtKey                                  0x000001b4   Data           4  zshw7.2.o(ZSHW72)
+    encryptMssg                              0x000001b8   Data          32  zshw7.2.o(ZSHW72)
+    decryptMssg                              0x000001d8   Data          32  zshw7.2.o(ZSHW72)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000210, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_RW (Base: 0x00000000, Size: 0x00000210, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000210   Code   RW            1  * ZSHW72              zshw7.2.o
+
+
+    Execution Region ER_ZI (Base: 0x00000210, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       528        260          0          0          0        284   zshw7.2.o
+
+    ----------------------------------------------------------------------
+       528        260          0          0          0        284   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       528        260          0          0          0        284   Grand Totals
+       528        260          0          0          0        284   ELF Image Totals
+       528        260          0          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  528 (   0.52kB)
+    Total RW  Size (RW Data + ZI Data)                 0 (   0.00kB)
+    Total ROM Size (Code + RO Data + RW Data)        528 (   0.52kB)
+
+==============================================================================
+

@@ -1,0 +1,5 @@
+--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC
+-I C:\Keil\ARM\CMSIS\Include
+
+--list .\zshw7.2.lst --xref -o .\zshw7.2.o --depend .\zshw7.2.d "ZSHW7.2.s"
